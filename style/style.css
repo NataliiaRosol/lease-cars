@@ -78,6 +78,9 @@ body{
   text-transform: uppercase;
   font-weight: 700;
 }
+.menu-list-link-active{
+  color: #0066ff;
+}
 .main{
   flex-grow: 1;
 }
@@ -315,12 +318,102 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  margin-bottom: 70px;
 }
-
-
-
-
-
+.blog-item{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog-item-img{
+  margin-bottom: 30px;
+  width: 100%;
+}
+.blog-item-title{
+  flex-basis: 446px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.blog-item-link{
+  color: #fff;
+  background-color: #0066FF;
+  padding: 4px 20px;
+}
+.showmore-link{
+  text-transform: uppercase;
+  background-color: #151515;
+  padding: 13px 13px;
+  color: #fff;
+  width: 225px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.choose{
+  padding: 0 100px 150px;
+}
+.tabs{
+  margin-bottom: 70px;
+}
+.tabs-btn{
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding-bottom: 100px;
+}
+.tabs-btn-item{
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.tabs-btn-item-active{
+  color:#0066ff;
+}
+.tabs-content-item{
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 40px;
+}
+.tabs-content-item.tabs-btn-item-active{
+  display: grid;
+  color: #000;
+}
+.car-card{
+  text-align: center;
+}
+.card-img{
+  display: block;
+}
+.card-content{
+  padding: 0 5px;
+  border: 1px solid #0066FF;
+  border-top: 0;
+}
+.card-title{
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  
+}
+.card-text{
+  margin-bottom: 20px;
+}
+.card-price{
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.card-link{
+  display: block;
+  color: #0066FF;
+  border: 1px solid #0066FF;
+  border-top: 0;
+}
 
 
 
