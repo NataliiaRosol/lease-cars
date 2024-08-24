@@ -350,7 +350,7 @@ body{
   margin: 0 auto;
 }
 .choose{
-  padding: 0 100px 150px;
+  padding: 100px 0 150px;
 }
 .tabs{
   margin-bottom: 70px;
@@ -414,34 +414,6 @@ body{
   border: 1px solid #0066FF;
   border-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
   background-color: var(--color-black);
   padding: 50px 0 32px;
@@ -480,4 +452,50 @@ body{
   display: flex;
   gap: 40px;
   justify-content: center;
+}
+.menu-btn{
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.menu-btn span{
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+}
+
+@media (max-width: 1180px) {
+  .important-list{
+    gap: 30px 20px;
+  }
+  .important-item-img{
+    width: 100%;
+  }
+}
+@media (max-width: 1240px) {
+  .video-content{
+    width: 100%;
+  }
+}
+@media (max-width: 860px) {
+  .menu-btn{
+    display: flex;
+  }
+  .why-lease-list{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .important-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: px) {
+  
 }
