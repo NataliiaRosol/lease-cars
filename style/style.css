@@ -488,6 +488,29 @@ body{
   .menu-btn{
     display: flex;
   }
+  .menu-btn, .logo{
+    position: relative;
+    z-index: 10;
+  }
+  .menu-list{
+    position: absolute;
+    z-index: 5;
+    background-color: #151515;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  .menu-list.menu-list-active{
+    transform: translateY(0%);
+  }
+  
   .why-lease-list{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -496,6 +519,87 @@ body{
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: px) {
+@media (max-width: 768px) {
+  .title{
+    font-size: 70px;
+  }
+  .top-link{
+    max-width: 360px;
+    padding: 16px;
+    font-size: 28px;
+  }
+  .swiper-pagination-bullet{
+    width: 60px;
+  }
+  .swiper-pagination-bullet-active{
+    height: 4px;
+  }
+  .video-content{
+    height: 400px;
+  }
+  .footer-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 540px) {
+  .title{
+    font-size: 60px;
+  }
+  .top-link{
+    font-size: 24px;
+    max-width: 310px;
+  }
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+  .swiper-pagination-bullet{
+    width: 35px;
+  }
+  .why-lease{
+    padding: 50px 0;
+  }
+  .section-title{
+    font-size: 34px;
+  }
+  .why-lease-list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .how-does-list{
+    padding: 30px 40px;
+  }
+  .how-does{
+    padding-bottom: 50px;
+  }
+  .how-does-item{
+    padding: 65px 0 19px;
+    margin-right: auto;
+  }
+  .how-does-item::before{
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+  .video{
+    padding-bottom: 50px;
+  }
+  .video-content{
+    height: 200px;
+  }
+  .important-list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .app,
+  .copy-nav-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .copy-nav-list{
+    gap: 20px;
+  }
+@media (max-width: 360px) {
   
 }
